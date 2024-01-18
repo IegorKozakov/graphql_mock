@@ -1,0 +1,11 @@
+type User {
+  id: String!
+  firstName: String!
+  lastName: String!
+  email: String!
+}
+
+type Query {
+  userHealthcheck: Boolean
+  listUsers(size: Int): [User]
+}
